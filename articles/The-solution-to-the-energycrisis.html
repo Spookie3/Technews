@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="../styles.css">
     <script>
         var prevScrollpos = window.pageYOffset; /*define a variable for the windows page y offset to compare against*/
-    window.onscroll = function() { /*create a new function for on scroll behavior*/ 
-      var currentScrollPos = window.pageYOffset; /*defining the current windows page y offset*/
-      if (prevScrollpos > currentScrollPos) { /*compare the current y position to the previous*/
-        document.getElementById("navbar").style.top = "0"; /*set current top styling to 0*/
-      } else {
-        document.getElementById("navbar").style.top = "-45px"; /*set current top styling to -40px*/
-      }
-      prevScrollpos = currentScrollPos; /*set the value of our previous y position to the current postion. update the calue we compare againt*/
-    }
-    </script>
+        window.onscroll = function() { /*create a new function for on scroll behavior*/ 
+            var currentScrollPos = window.pageYOffset; /*defining the current windows page y offset*/
+            if (prevScrollpos > currentScrollPos) { /*compare the current y position to the previous*/
+                document.getElementById("navbar").style.top = "0"; /*set current top styling to 0*/
+            } else {
+                document.getElementById("navbar").style.top = "-45px"; /*set current top styling to -40px*/
+            }
+            prevScrollpos = currentScrollPos; /*set the value of our previous y position to the current postion. update the calue we compare againt*/
+        }
+        </script>
     <title>The solution to the energy crisis</title>
 </head>
 <body>
