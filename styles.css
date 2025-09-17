@@ -12,6 +12,9 @@
 
 body {
     background-color: rgb(150, 150, 150);
+    display : flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*menue CSS*/
@@ -19,9 +22,9 @@ body {
     display: flex;
     background-color: rgb(200, 200, 200);
     max-width: 800px;
-    height: 100%;
     padding: 0px 5px 0;
     justify-self: center;
+    align-self: flex-start;
     transition: padding .2s ease-in-out;
 }
 
@@ -77,17 +80,16 @@ body {
 
 
 /*content CSS*/
-main {
+main, #articles, #sidebar {
     display: flex;
 }
 
 #read_area {
     background-color: rgb(200, 200, 200);
-    width: 100%;
+    max-width: 100%;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
+    align-items: flex-start;
     padding-top: 10px;
 }
 
@@ -95,7 +97,7 @@ main {
     background-color: rgb(200, 200, 200);
     flex-direction: column;
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     font-size: 1.05rem;
@@ -104,7 +106,7 @@ main {
 .news_container {
     background-color: white;
     margin: 2px 0 0 0;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -114,7 +116,7 @@ main {
 }
 
 .news_container img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -149,18 +151,18 @@ main {
 }
 
 #sidebar {
-    display: flex;
+    align-items: center;
     background-color: white;
     flex-direction: column;
-    padding-top: 10px;
+    padding: 10px 0;
     margin-left: 2px;
     overflow: hidden;
-    min-width: 130px;
-    width: 35%;
+    min-width: 25%;
 }
 
 #sidebar>h3 {
     align-self: center;
+    margin: 10px 10px 0 10px;
 }
 
 #sidebar>a {
@@ -168,6 +170,7 @@ main {
     color: black;
     font-weight: bold;
     margin: 10px 10px 0 10px;
+    align-self: flex-start;
 }
 
 #sidebar>a:hover {
@@ -209,7 +212,7 @@ svg {
 @media screen and (max-width: 600px) {
     #navbar {
         flex-wrap: wrap;
-        overflow: hidden;
+        justify-self: anchor-center;
     }
 
     #navbar a {
