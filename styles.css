@@ -24,7 +24,6 @@ body {
     max-width: 800px;
     padding: 0px 5px 0;
     justify-self: center;
-    align-self: flex-start;
     transition: padding .2s ease-in-out;
 }
 
@@ -210,6 +209,9 @@ svg {
 }
 
 @media screen and (max-width: 600px) {
+    #page_content {
+        align-self: flex-start;
+    }
     #navbar {
         flex-wrap: wrap;
         justify-self: anchor-center;
