@@ -4,6 +4,7 @@
     --background-color: rgb(150, 150, 150);
     --content-background-color: rgb(200, 200, 200);
     --text-color: black;
+    --content-color: white;
 }
 
 * {
@@ -11,7 +12,7 @@
 }
 
 body {
-    background-color: rgb(150, 150, 150);
+    background-color: var(--background-color);
     display : flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +21,7 @@ body {
 /*menue CSS*/
 #page_content {
     display: flex;
-    background-color: rgb(200, 200, 200);
+    background-color: var(--content-background-color);
     max-width: 800px;
     padding: 0px 5px 0;
     justify-self: center;
@@ -28,8 +29,8 @@ body {
 }
 
 #navbar {
-    background-color: white;
-    box-shadow: 0 3px 0 0 rgb(255, 147, 24);
+    background-color: var(--content-color);
+    box-shadow: 0 3px 0 0 var(--main-color);
     overflow: hidden;
     display: flex;
     position: fixed;
@@ -48,18 +49,18 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: bold;
     font-size: 1.2rem;
     width: 100%;
 }
 
 #navbar a:hover {
-    background-color: rgb(162, 216, 255);
+    background-color: var(--alt-color);
 }
 
 #navbar .current_link {
-    background-color: rgb(200, 200, 200);
+    background-color: var(--content-background-color);
 }
 
 #menu {
@@ -84,7 +85,7 @@ main, #articles, #sidebar {
 }
 
 #read_area {
-    background-color: rgb(200, 200, 200);
+    background-color: var(--content-background-color);
     max-width: 100%;
     flex-direction: row;
     justify-content: center;
@@ -93,7 +94,7 @@ main, #articles, #sidebar {
 }
 
 #articles {
-    background-color: rgb(200, 200, 200);
+    background-color: var(--content-background-color);
     flex-direction: column;
     overflow: hidden;
     max-width: 100%;
@@ -103,7 +104,7 @@ main, #articles, #sidebar {
 }
 
 .news_container {
-    background-color: white;
+    background-color: var(--content-color);
     margin: 2px 0 0 0;
     max-width: 100%;
     height: auto;
@@ -123,7 +124,7 @@ main, #articles, #sidebar {
     display: flex;
     justify-self: right;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     margin-right: 30px;
     padding-bottom: 10px;
 }
@@ -151,7 +152,7 @@ main, #articles, #sidebar {
 
 #sidebar {
     align-items: center;
-    background-color: white;
+    background-color: var(--content-color);
     flex-direction: column;
     padding: 10px 0;
     margin-left: 2px;
@@ -166,7 +167,7 @@ main, #articles, #sidebar {
 
 #sidebar>a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: bold;
     margin: 10px 10px 0 10px;
     align-self: flex-start;
@@ -178,11 +179,11 @@ main, #articles, #sidebar {
 
 /*footer CSS*/
 footer {
-    background-color: rgb(162, 216, 255); /* display area */
+    background-color: var(--alt-color); /* display area */
     display: flex;
     flex-direction: column;
     width: 100%;
-    box-shadow: 0 50vh 0 50vh rgb(162, 216, 255); /* fill rest of the page */
+    box-shadow: 0 50vh 0 50vh var(--alt-color); /* fill rest of the page */
 }
 
 #social_links {
