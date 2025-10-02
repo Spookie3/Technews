@@ -182,13 +182,20 @@ footer {
     background-color: var(--alt-color); /* display area */
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     box-shadow: 0 50vh 0 50vh var(--alt-color); /* fill rest of the page */
+}
+
+footer span {
+    margin-top: 20px;
+    text-align: center;
 }
 
 #social_links {
     display: flex;
     width: 100%;
+    max-width: 800px;
 }
 
 #copyright {
@@ -209,7 +216,20 @@ svg {
     max-width: 50px;
 }
 
-@media screen and (max-width: 600px) {
+#address {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+}
+
+#address span {
+    margin-top: 0;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
     #page_content {
         align-self: flex-start;
     }
