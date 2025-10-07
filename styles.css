@@ -229,6 +229,8 @@ svg {
     text-align: left;
 }
 
+
+/*Rules for better responsiveness across devices*/
 @media only screen and (max-width: 600px) {
     #page_content {
         align-self: flex-start;
